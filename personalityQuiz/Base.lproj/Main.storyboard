@@ -204,15 +204,30 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzz-Cm-0Mv">
+                                <rect key="frame" x="0.0" y="84" width="375" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="V2d-dB-ddS">
+                                <rect key="frame" x="16" y="645" width="343" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="C2M-UI-BtD" firstAttribute="leading" secondItem="50w-Df-B6N" secondAttribute="leading" id="6IF-bx-3dL"/>
                             <constraint firstItem="DzB-ev-YO3" firstAttribute="leading" secondItem="50w-Df-B6N" secondAttribute="leading" id="DgG-3s-U8g"/>
+                            <constraint firstItem="V2d-dB-ddS" firstAttribute="leading" secondItem="H40-Rd-aOU" secondAttribute="leadingMargin" id="FK7-Yf-1VN"/>
                             <constraint firstItem="50w-Df-B6N" firstAttribute="trailing" secondItem="FB9-Mz-pNo" secondAttribute="trailing" id="Gur-E1-dnc"/>
+                            <constraint firstItem="mzz-Cm-0Mv" firstAttribute="leading" secondItem="50w-Df-B6N" secondAttribute="leading" id="N88-kW-mbi"/>
                             <constraint firstItem="FB9-Mz-pNo" firstAttribute="leading" secondItem="50w-Df-B6N" secondAttribute="leading" id="TwU-q0-17x"/>
                             <constraint firstItem="C2M-UI-BtD" firstAttribute="centerY" secondItem="H40-Rd-aOU" secondAttribute="centerY" id="Vl0-kl-Eut"/>
+                            <constraint firstItem="50w-Df-B6N" firstAttribute="trailing" secondItem="mzz-Cm-0Mv" secondAttribute="trailing" id="WMK-GA-JqW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V2d-dB-ddS" secondAttribute="trailing" id="gra-Ei-faR"/>
+                            <constraint firstItem="50w-Df-B6N" firstAttribute="bottom" secondItem="V2d-dB-ddS" secondAttribute="bottom" constant="20" id="kLW-us-jvc"/>
                             <constraint firstItem="FB9-Mz-pNo" firstAttribute="centerY" secondItem="H40-Rd-aOU" secondAttribute="centerY" id="mIG-8L-iDS"/>
+                            <constraint firstItem="mzz-Cm-0Mv" firstAttribute="top" secondItem="50w-Df-B6N" secondAttribute="top" constant="20" id="mtT-vF-sxj"/>
                             <constraint firstItem="DzB-ev-YO3" firstAttribute="centerY" secondItem="H40-Rd-aOU" secondAttribute="centerY" id="t4b-uH-WL4"/>
                             <constraint firstItem="50w-Df-B6N" firstAttribute="trailing" secondItem="DzB-ev-YO3" secondAttribute="trailing" id="u2I-OH-siH"/>
                         </constraints>
