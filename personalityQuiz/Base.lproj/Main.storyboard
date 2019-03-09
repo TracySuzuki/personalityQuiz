@@ -236,6 +236,8 @@
                     <navigationItem key="navigationItem" id="Lr9-3l-lci"/>
                     <connections>
                         <outlet property="multipleStackView" destination="FB9-Mz-pNo" id="3lS-wF-EXT"/>
+                        <outlet property="questionLabel" destination="mzz-Cm-0Mv" id="ztV-Pf-eIG"/>
+                        <outlet property="questionProgressView" destination="V2d-dB-ddS" id="6kp-AH-ySS"/>
                         <outlet property="rangedStackView" destination="DzB-ev-YO3" id="ybA-I1-nlP"/>
                         <outlet property="singleStackView" destination="C2M-UI-BtD" id="usd-dy-mLP"/>
                         <segue destination="ez9-ck-Fgi" kind="show" identifier="ResultsSegue" id="O99-Ot-TBD"/>
