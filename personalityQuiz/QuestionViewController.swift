@@ -18,16 +18,18 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var singleButton2: UIButton!
     @IBOutlet weak var singleButton3: UIButton!
     @IBOutlet weak var singleButton4: UIButton!
+    
   
     @IBOutlet weak var multipleStackView: UIStackView!
-    @IBOutlet weak var multiLabel1: UIButton!
-    @IBOutlet weak var multiLabel2: UIButton!
-    @IBOutlet weak var multiLabel3: UIButton!
-    @IBOutlet weak var multiLabel4: UIButton!
+    @IBOutlet weak var multiLabel1: UILabel!
+    @IBOutlet weak var multiLabel2: UILabel!
+    @IBOutlet weak var multiLabel3: UILabel!
+    @IBOutlet weak var multiLabel4: UILabel!
+    
     
     @IBOutlet weak var rangedStackView: UIStackView!
-    @IBOutlet weak var rangedLabel1: UIButton!
-    @IBOutlet weak var rangedLabel2: UIButton!
+    @IBOutlet weak var rangedLabel1: UILabel!
+    @IBOutlet weak var rangedLabel2: UILabel!
     
     @IBOutlet weak var questionProgressView: UIProgressView!
     
