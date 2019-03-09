@@ -175,22 +175,48 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DzB-ev-YO3">
+                                <rect key="frame" x="0.0" y="273.5" width="375" height="120.5"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="IFg-fF-kYT">
+                                        <rect key="frame" x="-2" y="0.0" width="379" height="31"/>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="M9d-pU-pso">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EeY-Lj-dhk">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHv-YQ-ddJ">
+                                                <rect key="frame" x="333" y="0.0" width="42" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk1-2X-y14">
+                                        <rect key="frame" x="0.0" y="90.5" width="375" height="30"/>
+                                        <state key="normal" title="Submit Answer"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="C2M-UI-BtD" firstAttribute="leading" secondItem="50w-Df-B6N" secondAttribute="leading" id="6IF-bx-3dL"/>
+                            <constraint firstItem="DzB-ev-YO3" firstAttribute="leading" secondItem="50w-Df-B6N" secondAttribute="leading" id="DgG-3s-U8g"/>
                             <constraint firstItem="50w-Df-B6N" firstAttribute="trailing" secondItem="FB9-Mz-pNo" secondAttribute="trailing" id="Gur-E1-dnc"/>
                             <constraint firstItem="FB9-Mz-pNo" firstAttribute="leading" secondItem="50w-Df-B6N" secondAttribute="leading" id="TwU-q0-17x"/>
                             <constraint firstItem="C2M-UI-BtD" firstAttribute="centerY" secondItem="H40-Rd-aOU" secondAttribute="centerY" id="Vl0-kl-Eut"/>
                             <constraint firstItem="FB9-Mz-pNo" firstAttribute="centerY" secondItem="H40-Rd-aOU" secondAttribute="centerY" id="mIG-8L-iDS"/>
+                            <constraint firstItem="DzB-ev-YO3" firstAttribute="centerY" secondItem="H40-Rd-aOU" secondAttribute="centerY" id="t4b-uH-WL4"/>
+                            <constraint firstItem="50w-Df-B6N" firstAttribute="trailing" secondItem="DzB-ev-YO3" secondAttribute="trailing" id="u2I-OH-siH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="50w-Df-B6N"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="FB9-Mz-pNo"/>
-                                <exclude reference="C2M-UI-BtD"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Lr9-3l-lci"/>
                     <connections>
