@@ -139,18 +139,6 @@ class QuestionViewController: UIViewController {
         nextQuestion()
     }
     
-    func nextQuestion() {
-        questionIndex += 1
-        
-        if questionIndex < questions.count {
-            updateUI()
-        } else {
-            performSegue(withIdentifier: "ResultsSegue", sender: nil)
-        }
-    }
-    
-    
-    
     
     func updateUI() {
         
@@ -215,4 +203,25 @@ class QuestionViewController: UIViewController {
         rangedLabel1.text = answers.first?.text
         rangedLabel2.text = answers.last?.text
     }
+    
+    func nextQuestion() {
+        questionIndex += 1
+        
+        if questionIndex < questions.count {
+            updateUI()
+        } else {
+            performSegue(withIdentifier: "ResultsSegue", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ResultsSegue" {
+            let resultsViewController = segue.destination as!
+                ResultsViewController
+            resultsViewController.responses = answersChosen
+            
+        }
+    }
 }
+
+
